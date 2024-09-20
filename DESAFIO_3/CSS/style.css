@@ -1,0 +1,16 @@
+#boxmodel-desafio {
+    height: 150px;
+    width: 350px;
+    background-color: #567;
+    padding: 10px;
+    border: 10px solid #000;
+    outline: 10px solid #489;
+    /* border-radius: 7px; */
+    margin: 40px 20px;
+}
+.titulo-desafio {
+    color: #000;
+    font-style: italic;
+    background-color: #789378;
+    border: none;
+}

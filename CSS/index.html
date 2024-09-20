@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="p-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+
+    <!-- Aula 3: INTERNAL CSS - *A style(css) é dentro do HTML, mas precisa criar uma <style> e declarar o bloco* -->
+    <style>
+        p{
+            /* color: gold; */
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+        <!-- Aula 4: EXTERNAL CSS -->
+        <link rel="stylesheet" href="css/style.css"> <!--Linha que linka a pasta css. Necessário criar um arquivo de .css-->
+        <link rel="stylesheet" href="css/lists.css"> <!--Importação da pasta do CSS (AULA 6: DE MULTIPLOS CSS)-->   
+
+</head>
+<body>
+
+    <!-- Aula 1: INLINE CSS -->
+    <h1 style="color:red">Mudar cor com o Inline </h1> <!--Não é necessário a criação da style dentro do .css e não é necessário declarar uma <style> e declarar o bloco -->
+
+    <!-- Aula 2: MULTIPLAS REGRAS CSS -->
+    <h1 style ="color:aquamarine; font-size: 40px; border-bottom: 1px solid red;"> Mudar a cor e tamanho da fonte</h1>
+
+    <!-- Aula 3: INTERNAL CSS -->
+    <p>Eu fui estilizado pelo internal</p> <!-- Declaração de texto do INTERNAL -->
+    <p>Mais um</p> <!-- Declaração de texto do INTERNAL -->
+    <p>E mais outro</p> <!-- Declaração de texto do INTERNAL-->
+
+    <!-- AULA 48: STICKY -->
+    <div class="sticky">
+        <span>EU SOU O STICKY </span>
+    </div>
+
+    <!-- Aula 4: EXTERNAL CSS-->
+    <h3>Meu título roxo</h3> <!--Título tem que ser igual ao do CSS. Se for diferente ele não faz o style -->
+
+    <!--Aula 5: ORDEM DO CSS-->
+    <!--Se o projeto tiver os estilos misturados (inline, internal e external) a ordem será a seguinte: inline > internal = external > padrão do navegador -->
+    <p style="color:hotpink">Ordem do CSS</p>
+    <p>Ordem do CSS 2</p>
+        
+    <!--Aula 6: MULTIPLOS CSS -->
+    <ul>
+    <li>Banana</li>
+    <li>Maça</li>
+    <li>Pitaia</li>
+    <li>Uva Verde</li>
+    </ul>
+        
+    <!-- Aula 10: CLASSES -->
+    <p class="paragraph"> Algum texto</p>
+    <p class="paragraph"> Algum texto 2</p>
+    <p class="paragraph"> Algum texto 3</p>
+
+    <!-- Aula 11: ID -->
+    <h1 id="exclusive-titles">Este é um título com ID</h1>
+        
+    <!-- Aula 12: ORDEM DE SETORES -->
+    <h2 id="algum-texto" class="titulo">Algum texto 1</h2> <!--ID -->
+    <h2 class="titulo">Algum texto 2</h2> <!-- CLASSE -->
+    <h2>Algum texto 3</h2> <!--SEM PARAMETROS -->
+
+    <!--AULA 13: NOME DE COR -->
+    <p class="color-name">Qualquer texto para nome de cores</p>
+
+    <!--AULA 14: HEX-->
+    <p class="hex">Paragrafo com Hex</p>
+    <p class="hex-2">Outro paragráfo com Hex</p>
+
+    <!-- AULA 15: APROFUNDANDO NO HEX -->
+    <p class="simple-hex">Hex simplificado 1</p>
+    <p class="simple-hex-2">Hex simplificado 2</p>
+
+    <!--AULA 16: RGB-->
+    <p class="rgb">Este foi estilizado por RGB</p> 
+    <p class="rgb-2">Este foi estilizado por RGB</p>
+                                
+    <!--AULA 17: RGBA -->
+    <p class="rgba">Este foi estilizado por RGBA</p>
+
+    <!--AULA 18: HSL-->
+    <p class="hsl">Este foi estilizado por HSL 1</p>
+    <p class="hsl-2">Este foi estilizado por HSL 2</p>
+    <p class="hsl-3">Este foi estilizado por HSL 3</p>
+
+    <!-- AULA 19: BACKGROUND-COLOR -->
+    <p class="bg">Este é o meu BACKGROUND-COLOR</p>
+    <h2 class="bg-2">Outra variação de BG</h2>
+
+    <!--AULA 20: BACKGROUND OPACIDADE -->
+    <div class="bg-opacity">
+    <p>Estou aqui!</p>
+    </div>
+
+    <div class="bg-opacity2">
+    <p>Estou aqui quase visível!</p>
+    </div>
+                                                            
+    <!-- AULA 21: RGBA COM OPACIDADE -->
+    <div class="rgba-opacity">
+    <h1>Este tíulo precisa está visível</h1>
+    </div>
+
+    <!-- AULA 22: BACKGROUND COM IMAGEM -->
+    <h1 class="bg-image">Este título tem uma imagem!</h1>
+                                                                
+    <!-- AULA 23: CENTRALIZAR IMAGEM NO BACKGROUND -->
+    <div class="not-centered-bg"></div>
+    <div class="centered-bg"></div>
+
+    <!--AULA 24: ALTURA E LARGURA -->
+    <div class="height-width"></div>
+    <div class="height-width2"></div>
+
+    <!--AULA 25: PADDING -->
+    <div class="without-padding">Este não tem padding</div>
+    <div class="padding">Este tem padding</div>
+
+    <!--AULA 26: PADDING INDIVIDUAIS -->
+    <p class="padding-individual">Este texto aqui tem paddings diferentes</p>
+                                                                                
+    <!--AULA 27: SHORTTHAND PADDING  -->
+    <p class="shorthand-padding">Bruno otário</p>
+    <p class="shorthand-padding2">Bruno otário 2</p>
+
+    <!-- AULA 28: PADDING COM WIDTH -->
+    <div class="without-border-box">
+    <p>Algum conteúdo(sem border box)</p>
+    </div>
+    <div class="border-box">
+    <p>Algum conteúdo(com border box)</p>
+    </div>
+
+    <!--AULA 29: BORDER -->
+    <div class="border">Borda 1</div>
+    <div class="border-2">Borda 2</div>
+
+    <!-- AULA 30: BORDA INDIVIDUAL -->
+    <p class="border-left">Borda na esquerda</p>
+    <p class="border-bottom">Borda na inferior</p>
+
+    <!-- AULA 31: BORDA ARRENDONADA -->
+    <p class="rounded-p">Eu estou arrendodado 1</p> 
+    <p class="rounded-p-2">Eu estou arrendodado 2</p> 
+
+    <div class="div-rounded">
+    <h1>Eu estou dentro de uma div</h1>
+    <p class="div-paragraph">Um paragrafo dentro de uma div</p>
+    </div> 
+
+    <!-- <div class="div-rounded-p">
+    <p>Eu Estou arrendodado dentro de uma DIV</p>
+    </div>    --> 
+    <!-- Não posso fazer isso pq senão o css irá pegar propriedades de ourta class -->
+
+    <!-- AULA 32: MARGEM -->
+    <div class="margin">Eu tenho margem </div>
+    <div class="margin-top">Eu tenho  margem no topo</div>
+    <div class="margin-shorthand">Ultilizando shorthand</div>
+
+    <!--AULA 33: BOX MODEL COMPLETO -->
+    <div class="box-model">
+    <p>Testando box model completo</p>
+    </div>
+
+    <!-- AULA 33: ALINHAMENTO DE TEXTO -->
+    <p class="texto-alinhado-direita">Texto alinhado a direita</p>
+    <div class="container-center">
+    <h2>Estamos centralizados</h2>
+    <p>Algum texto</p>
+    </div>
+
+    <!-- AULA 34: DECORAÇÃO DE TEXTO -->   
+    <p class="underline">Eu tenho underline</p>
+    <p class="line-trough">Eu tenho um risco</p>
+    <a href="#" class="remove-underline">Sem underline</a>
+                                                                                                                
+    <!-- AULA 35: TEXT TRANSFORM -->
+    <p class="upper">Este texto é em caixa alta</p>
+    <p class="lower">ESTE TEXTO É EM LOWER</p>
+
+    <!-- AULA 36: LETTER SPACING -->
+    <h2 class="spacing">Eu tenho um espaçamento maior</h2>
+
+    <!-- AULA 37: FONTES -->
+    <p class="serif">Serif fonte</p>
+    <p class="sans-serif">Sans serif fonte</p>
+    <p class="monospace">Monospace fonte</p>
+    <p class="cursive">Cursive fonte</p>
+    <p class="fantasy">Fantasy fonte</p>
+                                                                                                                            
+    <!-- AULA 38: ESTILO DE FONTE -->
+    <p class="italico">Eu estou em itálico</p>
+    <p class="obliquo">Eu estou em oblíquo</p>
+
+    <!--AULA 39: FONTE WEIGHT -->
+    <p class="thin">Eu sou mais fino</p>
+    <p class="bold">Eu estou em bold</p>
+    <p class="bolder">Eu sou a maior fonte</p>
+
+    <!--AULA 40: FONT SIZE -->
+    <h4 class="small">Título pequeno</h4>
+    <h4 class="big">Título grande</h4>
+
+    <!--AULA 41: DISPLAY -->
+    <div class="inline-box">a</div>
+    <div class="inline-box">b</div>
+    <div class="inline-box">c</div>
+    <span class="block">Teste</span>
+    <span class="block">Teste 2</span>
+
+    <!--AULA 42: ESCONDENDO ELEMENTOS -->
+    <p class="invisivel">KD EU?!</p>
+
+    <!-- AULA 43: STATIC -->
+    <div class="static">
+        <span>Eu sou estático</span>
+    </div>
+
+    <!--AULA 44: POSITION RELATIVE -->
+
+    <!-- <div class="relative">
+        <span>Eu sou relativo</span>
+    </div> -->
+    <div class="" id="relative">
+        <span class="span-relative">Eu sou relativo</span>
+    </div> 
+    <p>Eu sou um paragrafo</p>
+
+    <!--AULA 45: POSITION ABSOLUTE -->
+    <div class="absolute">
+        <span>Eu sou absoluto</span>
+    </div>
+    <p>Eu sou um paragrafo</p>
+
+    <!-- AULA 46: RELATIVE COM ABSOLUTE -->
+    <div class="relattive-container">
+        <div class="absolute-1"></div>
+        <div class="absolute-2"></div>
+    </div>
+
+    <!--AULA 47: FIXED -->
+    <div class="fixed">
+        <span>Eu estou fixado</span>
+    </div>
+
+    <!--AULA 49: Z INDEX -->
+    <div class="relattive-container">
+        <div class="absolute-3"></div>
+        <div class="absolute-4"></div>
+        <div class="absolute-5"></div>
+    </div>
+
+</html>

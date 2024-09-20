@@ -1,0 +1,86 @@
+/* GERAL */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia;
+    background-color: #ddd;
+}
+
+ul {
+    list-style: none;
+}
+  
+a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.4s;
+  }
+  
+a:hover {
+    color: #37a1f7;
+}
+
+/* NAVBAR */
+#nav h1 {
+    font-size: 70px;
+    color: #000;
+}
+
+#nav {
+    padding: 1.5rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    border-bottom: 2px solid #8f2121;
+}
+
+#nav-itens {
+    display: flex;
+    gap: 1rem;
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+#post-contato p {
+    text-align: center;
+    margin: 100px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.contato-face, .contato-insta, .contato-tt {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px; 
+    margin-bottom: 20px; 
+}
+
+.contato-face img,
+.contato-insta img,
+.contato-tt img {  
+    width: 20px;
+    height: 20px;
+}
+
+.contato-face h3,
+.contato-insta h3,
+.contato-tt h3{
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+/* Rodapé */
+#footer {
+    border-top: 2px solid #cc0606;
+    padding: 3rem;
+    text-align: center;
+}
+  
+#footer h2,
+#footer p {
+    color: #000;
+    margin-bottom: 1rem;
+}
